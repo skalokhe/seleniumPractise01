@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11938" started-at="2020-02-29T20:44:32Z" finished-at="2020-02-29T20:44:44Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11938" started-at="2020-02-29T20:44:32Z" finished-at="2020-02-29T20:44:44Z">
+      <class name="Academy.HomePage">
+        <test-method status="PASS" signature="initialise()[pri:0, instance:Academy.HomePage@4563e9ab]" name="initialise" is-config="true" duration-ms="4884" started-at="2020-03-01T02:14:32Z" finished-at="2020-03-01T02:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialise -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@4563e9ab]" name="basePageNavigation" duration-ms="6942" started-at="2020-03-01T02:14:37Z" data-provider="getData" finished-at="2020-03-01T02:14:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@sskfirms.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@ssk1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restriced user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="FAIL" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@4563e9ab]" name="basePageNavigation" duration-ms="45" started-at="2020-03-01T02:14:44Z" data-provider="getData" finished-at="2020-03-01T02:14:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz@sskfirms.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz@ssk1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restriced user]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'Featured Courses')]"}
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SKALOKHE2L2', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: D:\Users\skalokhe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d59cc7b15c3e207e78b8b0471bce8595
+*** Element info: {Using=xpath, value=//h2[contains(text(),'Featured Courses')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'Featured Courses')]"}
+  (Session info: chrome=80.0.3987.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SKALOKHE2L2', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: D:\Users\skalokhe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d59cc7b15c3e207e78b8b0471bce8595
+*** Element info: {Using=xpath, value=//h2[contains(text(),'Featured Courses')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LandingPage.getTitle(LandingPage.java:31)
+	at Academy.HomePage.basePageNavigation(HomePage.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.HomePage@4563e9ab]" name="tearDown" is-config="true" duration-ms="54" started-at="2020-03-01T02:14:44Z" finished-at="2020-03-01T02:14:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Academy.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

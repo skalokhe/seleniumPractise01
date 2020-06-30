@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24066" started-at="2020-03-01T15:09:24 IST" finished-at="2020-03-01T15:09:48 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24066" started-at="2020-03-01T15:09:24 IST" finished-at="2020-03-01T15:09:48 IST">
+      <class name="Academy.HomePage">
+        <test-method status="PASS" signature="initialise()[pri:0, instance:Academy.HomePage@527e5409]" name="initialise" is-config="true" duration-ms="2964" started-at="2020-03-01T15:09:24 IST" finished-at="2020-03-01T15:09:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialise -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@527e5409]" name="basePageNavigation" duration-ms="11521" started-at="2020-03-01T15:09:27 IST" data-provider="getData" finished-at="2020-03-01T15:09:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@sskfirms.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc@ssk1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restriced user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@527e5409]" name="basePageNavigation" duration-ms="7450" started-at="2020-03-01T15:09:38 IST" data-provider="getData" finished-at="2020-03-01T15:09:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz@sskfirms.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz@ssk1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restriced user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.HomePage@527e5409]" name="tearDown" is-config="true" duration-ms="2094" started-at="2020-03-01T15:09:45 IST" finished-at="2020-03-01T15:09:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Academy.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
